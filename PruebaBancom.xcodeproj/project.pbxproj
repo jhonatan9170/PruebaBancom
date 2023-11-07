@@ -16,6 +16,12 @@
 		0313F77B2AF9D6C600AD9484 /* PruebaBancomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F77A2AF9D6C600AD9484 /* PruebaBancomTests.swift */; };
 		0313F7852AF9D6C600AD9484 /* PruebaBancomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7842AF9D6C600AD9484 /* PruebaBancomUITests.swift */; };
 		0313F7872AF9D6C600AD9484 /* PruebaBancomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7862AF9D6C600AD9484 /* PruebaBancomUITestsLaunchTests.swift */; };
+		03E50B952AFAA26300BD7020 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E50B932AFAA26300BD7020 /* LoginViewController.swift */; };
+		03E50B962AFAA26400BD7020 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E50B942AFAA26300BD7020 /* LoginViewController.xib */; };
+		03E50B9A2AFABEBC00BD7020 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E50B992AFABEBC00BD7020 /* Extensions.swift */; };
+		70D14814F8639EA1DC27A117 /* Pods_PruebaBancom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6AF54FD9756B2DBEE78416 /* Pods_PruebaBancom.framework */; };
+		9DDAB22EE775088A959A8DEC /* Pods_PruebaBancom_PruebaBancomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488D2C7E34DF74294C4F2F1D /* Pods_PruebaBancom_PruebaBancomUITests.framework */; };
+		9E254DFFFC235C60F4FA4CC6 /* Pods_PruebaBancomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DA1920846A6A8F05D33AA /* Pods_PruebaBancomTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,18 @@
 		0313F7802AF9D6C600AD9484 /* PruebaBancomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaBancomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0313F7842AF9D6C600AD9484 /* PruebaBancomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaBancomUITests.swift; sourceTree = "<group>"; };
 		0313F7862AF9D6C600AD9484 /* PruebaBancomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaBancomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03E50B932AFAA26300BD7020 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03E50B942AFAA26300BD7020 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		03E50B992AFABEBC00BD7020 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0F775F19731CF873882FB884 /* Pods-PruebaBancomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancomTests.release.xcconfig"; path = "Target Support Files/Pods-PruebaBancomTests/Pods-PruebaBancomTests.release.xcconfig"; sourceTree = "<group>"; };
+		163988D8FE1FA7F25CCC7F80 /* Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig"; path = "Target Support Files/Pods-PruebaBancom-PruebaBancomUITests/Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3B6AF54FD9756B2DBEE78416 /* Pods_PruebaBancom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaBancom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488D2C7E34DF74294C4F2F1D /* Pods_PruebaBancom_PruebaBancomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaBancom_PruebaBancomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B29F5C793BBFA8F6ADEAA80 /* Pods-PruebaBancomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancomTests.debug.xcconfig"; path = "Target Support Files/Pods-PruebaBancomTests/Pods-PruebaBancomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A768FCFED31DB49651815397 /* Pods-PruebaBancom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancom.release.xcconfig"; path = "Target Support Files/Pods-PruebaBancom/Pods-PruebaBancom.release.xcconfig"; sourceTree = "<group>"; };
+		AE9DA1920846A6A8F05D33AA /* Pods_PruebaBancomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaBancomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3EE864913B65813666EF9E /* Pods-PruebaBancom-PruebaBancomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancom-PruebaBancomUITests.debug.xcconfig"; path = "Target Support Files/Pods-PruebaBancom-PruebaBancomUITests/Pods-PruebaBancom-PruebaBancomUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6CDD8D59EFA69719CCB7E21 /* Pods-PruebaBancom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancom.debug.xcconfig"; path = "Target Support Files/Pods-PruebaBancom/Pods-PruebaBancom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D14814F8639EA1DC27A117 /* Pods_PruebaBancom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E254DFFFC235C60F4FA4CC6 /* Pods_PruebaBancomTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDAB22EE775088A959A8DEC /* Pods_PruebaBancom_PruebaBancomUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,8 @@
 				0313F7792AF9D6C600AD9484 /* PruebaBancomTests */,
 				0313F7832AF9D6C600AD9484 /* PruebaBancomUITests */,
 				0313F7612AF9D6C400AD9484 /* Products */,
+				29B7EFBA9181286F78059A91 /* Pods */,
+				72390CFCB3D7706A170CAFBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +122,7 @@
 		0313F7622AF9D6C400AD9484 /* PruebaBancom */ = {
 			isa = PBXGroup;
 			children = (
+				03E50B992AFABEBC00BD7020 /* Extensions.swift */,
 				0313F7632AF9D6C400AD9484 /* AppDelegate.swift */,
 				0313F7652AF9D6C400AD9484 /* SceneDelegate.swift */,
 				0313F7672AF9D6C400AD9484 /* ViewController.swift */,
@@ -106,6 +130,8 @@
 				0313F76C2AF9D6C500AD9484 /* Assets.xcassets */,
 				0313F76E2AF9D6C500AD9484 /* LaunchScreen.storyboard */,
 				0313F7712AF9D6C500AD9484 /* Info.plist */,
+				03E50B932AFAA26300BD7020 /* LoginViewController.swift */,
+				03E50B942AFAA26300BD7020 /* LoginViewController.xib */,
 			);
 			path = PruebaBancom;
 			sourceTree = "<group>";
@@ -127,6 +153,29 @@
 			path = PruebaBancomUITests;
 			sourceTree = "<group>";
 		};
+		29B7EFBA9181286F78059A91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6CDD8D59EFA69719CCB7E21 /* Pods-PruebaBancom.debug.xcconfig */,
+				A768FCFED31DB49651815397 /* Pods-PruebaBancom.release.xcconfig */,
+				CD3EE864913B65813666EF9E /* Pods-PruebaBancom-PruebaBancomUITests.debug.xcconfig */,
+				163988D8FE1FA7F25CCC7F80 /* Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig */,
+				5B29F5C793BBFA8F6ADEAA80 /* Pods-PruebaBancomTests.debug.xcconfig */,
+				0F775F19731CF873882FB884 /* Pods-PruebaBancomTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		72390CFCB3D7706A170CAFBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B6AF54FD9756B2DBEE78416 /* Pods_PruebaBancom.framework */,
+				488D2C7E34DF74294C4F2F1D /* Pods_PruebaBancom_PruebaBancomUITests.framework */,
+				AE9DA1920846A6A8F05D33AA /* Pods_PruebaBancomTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0313F78A2AF9D6C600AD9484 /* Build configuration list for PBXNativeTarget "PruebaBancom" */;
 			buildPhases = (
+				59AAF1119B713839E722320D /* [CP] Check Pods Manifest.lock */,
 				0313F75C2AF9D6C400AD9484 /* Sources */,
 				0313F75D2AF9D6C400AD9484 /* Frameworks */,
 				0313F75E2AF9D6C400AD9484 /* Resources */,
+				2C175447AAE0EAE7CC2993AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0313F78D2AF9D6C600AD9484 /* Build configuration list for PBXNativeTarget "PruebaBancomTests" */;
 			buildPhases = (
+				958F5C2F9FB9057DF3D72E76 /* [CP] Check Pods Manifest.lock */,
 				0313F7722AF9D6C600AD9484 /* Sources */,
 				0313F7732AF9D6C600AD9484 /* Frameworks */,
 				0313F7742AF9D6C600AD9484 /* Resources */,
@@ -169,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0313F7902AF9D6C600AD9484 /* Build configuration list for PBXNativeTarget "PruebaBancomUITests" */;
 			buildPhases = (
+				45F145D67D96AF9FC1C9B53F /* [CP] Check Pods Manifest.lock */,
 				0313F77C2AF9D6C600AD9484 /* Sources */,
 				0313F77D2AF9D6C600AD9484 /* Frameworks */,
 				0313F77E2AF9D6C600AD9484 /* Resources */,
+				5B255C54B5470F2ECA6E07F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E50B962AFAA26400BD7020 /* LoginViewController.xib in Resources */,
 				0313F7702AF9D6C500AD9484 /* LaunchScreen.storyboard in Resources */,
 				0313F76D2AF9D6C500AD9484 /* Assets.xcassets in Resources */,
 				0313F76B2AF9D6C400AD9484 /* Main.storyboard in Resources */,
@@ -253,11 +308,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C175447AAE0EAE7CC2993AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PruebaBancom/Pods-PruebaBancom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PruebaBancom/Pods-PruebaBancom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PruebaBancom/Pods-PruebaBancom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45F145D67D96AF9FC1C9B53F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PruebaBancom-PruebaBancomUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59AAF1119B713839E722320D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PruebaBancom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B255C54B5470F2ECA6E07F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PruebaBancom-PruebaBancomUITests/Pods-PruebaBancom-PruebaBancomUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PruebaBancom-PruebaBancomUITests/Pods-PruebaBancom-PruebaBancomUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PruebaBancom-PruebaBancomUITests/Pods-PruebaBancom-PruebaBancomUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		958F5C2F9FB9057DF3D72E76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PruebaBancomTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0313F75C2AF9D6C400AD9484 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E50B9A2AFABEBC00BD7020 /* Extensions.swift in Sources */,
+				03E50B952AFAA26300BD7020 /* LoginViewController.swift in Sources */,
 				0313F7682AF9D6C400AD9484 /* ViewController.swift in Sources */,
 				0313F7642AF9D6C400AD9484 /* AppDelegate.swift in Sources */,
 				0313F7662AF9D6C400AD9484 /* SceneDelegate.swift in Sources */,
@@ -366,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +592,7 @@
 		};
 		0313F78B2AF9D6C600AD9484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6CDD8D59EFA69719CCB7E21 /* Pods-PruebaBancom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -441,10 +602,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PruebaBancom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = " ";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +622,7 @@
 		};
 		0313F78C2AF9D6C600AD9484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A768FCFED31DB49651815397 /* Pods-PruebaBancom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,10 +632,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PruebaBancom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = " ";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,6 +652,7 @@
 		};
 		0313F78E2AF9D6C600AD9484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B29F5C793BBFA8F6ADEAA80 /* Pods-PruebaBancomTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,7 +660,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RRD9A765A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.PruebaBancomTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +673,7 @@
 		};
 		0313F78F2AF9D6C600AD9484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F775F19731CF873882FB884 /* Pods-PruebaBancomTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,7 +681,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RRD9A765A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.PruebaBancomTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,12 +694,14 @@
 		};
 		0313F7912AF9D6C600AD9484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3EE864913B65813666EF9E /* Pods-PruebaBancom-PruebaBancomUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RRD9A765A;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.PruebaBancomUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,12 +714,14 @@
 		};
 		0313F7922AF9D6C600AD9484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163988D8FE1FA7F25CCC7F80 /* Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RRD9A765A;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatan.PruebaBancomUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

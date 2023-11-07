@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="PruebaBancom" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="CTr-bY-oi0" id="jJh-Jx-u5T"/>
+                <outlet property="passWordTextField" destination="l7f-q7-Dzr" id="t2e-bZ-fwz"/>
+                <outlet property="rememberCheckBox" destination="3ef-mD-CK8" id="ECG-72-5on"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7f-q7-Dzr" customClass="MDCOutlinedTextField">
+                    <rect key="frame" x="16" y="310.66666666666669" width="361" height="34"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru6-re-cqO">
+                    <rect key="frame" x="339" y="315.66666666666669" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="TiR-1l-bQf"/>
+                        <constraint firstAttribute="height" constant="24" id="dAY-6Q-fit"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="eye.fill" catalog="system">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <buttonConfiguration key="configuration" style="plain" image="eye.fill" catalog="system">
+                        <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="showHidePasswordBtnTapped:" destination="-1" eventType="touchUpInside" id="cYN-nl-Oj6"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CTr-bY-oi0" customClass="MDCOutlinedTextField">
+                    <rect key="frame" x="16" y="246.66666666666663" width="361" height="34"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IEl-4f-97y">
+                    <rect key="frame" x="14" y="139" width="365" height="62.666666666666657"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvV-1R-YZL">
+                            <rect key="frame" x="0.0" y="0.0" width="365" height="18.666666666666668"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicia sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBF-LH-139">
+                            <rect key="frame" x="0.0" y="26.666666666666657" width="365" height="36"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gak-K0-z9F">
+                    <rect key="frame" x="16" y="648" width="361" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="FyH-zf-Fvz"/>
+                    </constraints>
+                    <color key="tintColor" red="0.48627450980392156" green="0.22745098039215686" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Ingresar">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="baseBackgroundColor" red="0.48627450979999998" green="0.2274509804" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="ingresarBtnTapped:" destination="-1" eventType="touchUpInside" id="OSX-uB-dpE"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ef-mD-CK8" customClass="Checkbox" customModule="SimpleCheckbox">
+                    <rect key="frame" x="16" y="369.66666666666669" width="20" height="20"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="nJG-iY-XEs"/>
+                        <constraint firstAttribute="width" constant="20" id="reJ-wb-Col"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.48627450979999998" green="0.2274509804" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zC-xG-aPA">
+                    <rect key="frame" x="16" y="722" width="361" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Yfq-S3-oD6"/>
+                    </constraints>
+                    <color key="tintColor" red="0.1764705882352941" green="0.21568627450980393" blue="0.28235294117647058" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="icon_google" imagePlacement="leading" title="   Ingresar con google">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.1764705882352941" green="0.21568627450980393" blue="0.28235294117647058" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="ingresarGoogleBtnTapped:" destination="-1" eventType="touchUpInside" id="zPM-1E-dhG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recordar correo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjr-2f-2Io">
+                    <rect key="frame" x="44" y="370.66666666666669" width="333" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IEl-4f-97y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="0aj-dd-QMV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IEl-4f-97y" secondAttribute="trailing" constant="14" id="5Jz-8l-MxW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gak-K0-z9F" secondAttribute="trailing" constant="16" id="97m-DM-n2K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l7f-q7-Dzr" secondAttribute="trailing" constant="16" id="ABO-AF-YOA"/>
+                <constraint firstItem="CTr-bY-oi0" firstAttribute="top" secondItem="IEl-4f-97y" secondAttribute="bottom" constant="45" id="Dov-kf-j6P"/>
+                <constraint firstItem="4zC-xG-aPA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="EPM-ka-txi"/>
+                <constraint firstItem="Ru6-re-cqO" firstAttribute="centerY" secondItem="l7f-q7-Dzr" secondAttribute="centerY" id="H33-VR-PI3"/>
+                <constraint firstItem="l7f-q7-Dzr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="P6h-3C-Pje"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ru6-re-cqO" secondAttribute="trailing" constant="30" id="QhM-HG-KzG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4zC-xG-aPA" secondAttribute="trailing" constant="16" id="QnW-1T-yfz"/>
+                <constraint firstItem="yjr-2f-2Io" firstAttribute="centerY" secondItem="3ef-mD-CK8" secondAttribute="centerY" id="RAh-hg-9w0"/>
+                <constraint firstItem="yjr-2f-2Io" firstAttribute="leading" secondItem="3ef-mD-CK8" secondAttribute="trailing" constant="8" symbolic="YES" id="Xja-Fo-tR6"/>
+                <constraint firstItem="3ef-mD-CK8" firstAttribute="top" secondItem="l7f-q7-Dzr" secondAttribute="bottom" constant="25" id="cig-Oi-HGK"/>
+                <constraint firstAttribute="trailing" secondItem="yjr-2f-2Io" secondAttribute="trailing" constant="16" id="iAj-7o-Aw7"/>
+                <constraint firstItem="Gak-K0-z9F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="iC4-Bg-dx5"/>
+                <constraint firstItem="l7f-q7-Dzr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="iPW-ya-3JS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CTr-bY-oi0" secondAttribute="trailing" constant="16" id="ie0-gP-xlO"/>
+                <constraint firstItem="3ef-mD-CK8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="k8D-dw-DhT"/>
+                <constraint firstItem="4zC-xG-aPA" firstAttribute="top" secondItem="Gak-K0-z9F" secondAttribute="bottom" constant="26" id="mnj-9Y-sFC"/>
+                <constraint firstItem="CTr-bY-oi0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="n8k-AK-cf3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l7f-q7-Dzr" secondAttribute="trailing" constant="16" id="pVf-uU-esh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4zC-xG-aPA" secondAttribute="bottom" constant="48" id="qYn-MF-XCg"/>
+                <constraint firstItem="l7f-q7-Dzr" firstAttribute="top" secondItem="CTr-bY-oi0" secondAttribute="bottom" constant="30" id="rHO-SH-ZSf"/>
+                <constraint firstItem="IEl-4f-97y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="w26-Ni-fwn"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eye.fill" catalog="system" width="128" height="80"/>
+        <image name="icon_google" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
