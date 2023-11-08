@@ -8,24 +8,30 @@
 import XCTest
 @testable import PruebaBancom
 
+import XCTest
+
 class LoginViewModelTests: XCTestCase {
     
     var viewModel: LoginViewModel!
     var mockUserService: MockUserService!
     var mockDelegate: MockLoginDelegate!
+    var mockUserDefaultsLayer: MockUserDefaultsLayer!
     
     override func setUp() {
         super.setUp()
         mockUserService = MockUserService()
+        mockUserDefaultsLayer = MockUserDefaultsLayer()
         mockDelegate = MockLoginDelegate()
         viewModel = LoginViewModel(service: mockUserService)
         viewModel.delegate = mockDelegate
+        viewModel.userDefaultsLayer = mockUserDefaultsLayer
     }
     
     override func tearDown() {
         viewModel = nil
         mockUserService = nil
         mockDelegate = nil
+        mockUserDefaultsLayer = nil
         super.tearDown()
     }
     
@@ -89,14 +95,35 @@ class MockLoginDelegate: LoginProtocol {
     
     var loginSuccess = false
     var loginFailure = false
+    var loggedInUser: User?
     var errorMessage: String?
     
     func login(user: User) {
         loginSuccess = true
+        loggedInUser = user
     }
     
     func login(error: String) {
         loginFailure = true
         errorMessage = error
+    }
+}
+
+class MockUserDefaultsLayer: UserDefaultsLayer {
+    var userDefaultsDictionary = [String: Any]()
+    
+    override func save(value: Any?, forKey key: String) {
+        userDefaultsDictionary[key] = value
+    }
+    
+    override func saveUser(value: User) {
+    }
+    
+    override func getUser() -> User? {
+        return userDefaultsDictionary[Constants.userKey] as? User
+    }
+    
+    override func getValue(forKey key: String) -> Any? {
+        return userDefaultsDictionary[key]
     }
 }

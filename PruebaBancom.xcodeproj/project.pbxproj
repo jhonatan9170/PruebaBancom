@@ -16,6 +16,13 @@
 		037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */; };
 		037EB5BC2AFC2822006E8FA5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5BB2AFC2822006E8FA5 /* LoginViewModel.swift */; };
 		037EB5BE2AFC2CAA006E8FA5 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5BD2AFC2CAA006E8FA5 /* LoginViewModelTest.swift */; };
+		037EB5C12AFC2FDC006E8FA5 /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5C02AFC2FDC006E8FA5 /* CreatePostViewModel.swift */; };
+		037EB5C32AFC31DD006E8FA5 /* UserDefaultLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5C22AFC31DD006E8FA5 /* UserDefaultLayer.swift */; };
+		037EB5CB2AFC3CFA006E8FA5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5C92AFC3CFA006E8FA5 /* Model.xcdatamodeld */; };
+		037EB5CD2AFC3D48006E8FA5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5CC2AFC3D48006E8FA5 /* CoreDataManager.swift */; };
+		037EB5CF2AFC3F91006E8FA5 /* HomeVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5CE2AFC3F91006E8FA5 /* HomeVIewModel.swift */; };
+		037EB5D12AFC453C006E8FA5 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5D02AFC453C006E8FA5 /* Project.swift */; };
+		037EB5D32AFC52C4006E8FA5 /* UserDefautsLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5D22AFC52C4006E8FA5 /* UserDefautsLayerTests.swift */; };
 		03C297B12AFB373A0033E437 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */; };
 		03C297B22AFB373A0033E437 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */; };
 		03C928D82AFBD35B00E11424 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C928D72AFBD35B00E11424 /* APIClient.swift */; };
@@ -60,6 +67,13 @@
 		037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTest.swift; sourceTree = "<group>"; };
 		037EB5BB2AFC2822006E8FA5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		037EB5BD2AFC2CAA006E8FA5 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		037EB5C02AFC2FDC006E8FA5 /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
+		037EB5C22AFC31DD006E8FA5 /* UserDefaultLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultLayer.swift; sourceTree = "<group>"; };
+		037EB5CA2AFC3CFA006E8FA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		037EB5CC2AFC3D48006E8FA5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		037EB5CE2AFC3F91006E8FA5 /* HomeVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewModel.swift; sourceTree = "<group>"; };
+		037EB5D02AFC453C006E8FA5 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		037EB5D22AFC52C4006E8FA5 /* UserDefautsLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefautsLayerTests.swift; sourceTree = "<group>"; };
 		03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		03C928D72AFBD35B00E11424 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -111,6 +125,7 @@
 		0313F7572AF9D6C400AD9484 = {
 			isa = PBXGroup;
 			children = (
+				037EB5C92AFC3CFA006E8FA5 /* Model.xcdatamodeld */,
 				0313F7622AF9D6C400AD9484 /* PruebaBancom */,
 				0313F7792AF9D6C600AD9484 /* PruebaBancomTests */,
 				0313F7612AF9D6C400AD9484 /* Products */,
@@ -131,6 +146,7 @@
 		0313F7622AF9D6C400AD9484 /* PruebaBancom */ = {
 			isa = PBXGroup;
 			children = (
+				037EB5BF2AFC2FAA006E8FA5 /* ViewModel */,
 				03C928E32AFBE5C700E11424 /* Models */,
 				03C928D42AFBD32400E11424 /* NetWorking */,
 				03C928D32AFBD2ED00E11424 /* Views */,
@@ -142,7 +158,8 @@
 				0313F7712AF9D6C500AD9484 /* Info.plist */,
 				03E50B9D2AFAE7A400BD7020 /* RadialGradientVIew.swift */,
 				03C928DB2AFBDF6500E11424 /* Constants.swift */,
-				037EB5BB2AFC2822006E8FA5 /* LoginViewModel.swift */,
+				037EB5C22AFC31DD006E8FA5 /* UserDefaultLayer.swift */,
+				037EB5CC2AFC3D48006E8FA5 /* CoreDataManager.swift */,
 			);
 			path = PruebaBancom;
 			sourceTree = "<group>";
@@ -155,8 +172,19 @@
 				037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */,
 				037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */,
 				037EB5BD2AFC2CAA006E8FA5 /* LoginViewModelTest.swift */,
+				037EB5D22AFC52C4006E8FA5 /* UserDefautsLayerTests.swift */,
 			);
 			path = PruebaBancomTests;
+			sourceTree = "<group>";
+		};
+		037EB5BF2AFC2FAA006E8FA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				037EB5BB2AFC2822006E8FA5 /* LoginViewModel.swift */,
+				037EB5C02AFC2FDC006E8FA5 /* CreatePostViewModel.swift */,
+				037EB5CE2AFC3F91006E8FA5 /* HomeVIewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		03C928D32AFBD2ED00E11424 /* Views */ = {
@@ -189,6 +217,7 @@
 			children = (
 				03C928DD2AFBE16300E11424 /* User.swift */,
 				03C928E42AFBE5E100E11424 /* Post.swift */,
+				037EB5D02AFC453C006E8FA5 /* Project.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -387,20 +416,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037EB5C32AFC31DD006E8FA5 /* UserDefaultLayer.swift in Sources */,
 				03C297B12AFB373A0033E437 /* ProjectCollectionViewCell.swift in Sources */,
 				03E50BAD2AFAF6F100BD7020 /* TaskTableViewCell.swift in Sources */,
 				03E50B9A2AFABEBC00BD7020 /* Extensions.swift in Sources */,
 				03E50B952AFAA26300BD7020 /* LoginViewController.swift in Sources */,
+				037EB5D12AFC453C006E8FA5 /* Project.swift in Sources */,
+				037EB5CB2AFC3CFA006E8FA5 /* Model.xcdatamodeld in Sources */,
 				0313F7642AF9D6C400AD9484 /* AppDelegate.swift in Sources */,
+				037EB5CF2AFC3F91006E8FA5 /* HomeVIewModel.swift in Sources */,
 				03C928E52AFBE5E100E11424 /* Post.swift in Sources */,
 				03C928DC2AFBDF6500E11424 /* Constants.swift in Sources */,
 				03C928E22AFBE52200E11424 /* UserService.swift in Sources */,
 				037EB5BC2AFC2822006E8FA5 /* LoginViewModel.swift in Sources */,
 				0313F7662AF9D6C400AD9484 /* SceneDelegate.swift in Sources */,
+				037EB5C12AFC2FDC006E8FA5 /* CreatePostViewModel.swift in Sources */,
 				03C928E02AFBE51200E11424 /* PostService.swift in Sources */,
 				03E50BA02AFAE7E700BD7020 /* HomeViewController.swift in Sources */,
 				03E50B9E2AFAE7A400BD7020 /* RadialGradientVIew.swift in Sources */,
 				03C928D82AFBD35B00E11424 /* APIClient.swift in Sources */,
+				037EB5CD2AFC3D48006E8FA5 /* CoreDataManager.swift in Sources */,
 				03C928DE2AFBE16300E11424 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +449,7 @@
 				03C928DA2AFBD9D200E11424 /* APIClientTest.swift in Sources */,
 				037EB5BE2AFC2CAA006E8FA5 /* LoginViewModelTest.swift in Sources */,
 				037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */,
+				037EB5D32AFC52C4006E8FA5 /* UserDefautsLayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +720,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		037EB5C92AFC3CFA006E8FA5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				037EB5CA2AFC3CFA006E8FA5 /* Model.xcdatamodel */,
+			);
+			currentVersion = 037EB5CA2AFC3CFA006E8FA5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0313F7582AF9D6C400AD9484 /* Project object */;
 }
