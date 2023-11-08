@@ -8,6 +8,7 @@ target 'PruebaBancom' do
   # Pods for PruebaBancom
   pod 'MaterialComponents/TextControls+OutlinedTextFields'
   pod 'SimpleCheckbox'
+  pod 'AvatarGroup'
   target 'PruebaBancomTests' do
     inherit! :search_paths
     # Pods for testing

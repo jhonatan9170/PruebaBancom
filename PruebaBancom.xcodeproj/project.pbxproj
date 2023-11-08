@@ -9,16 +9,21 @@
 /* Begin PBXBuildFile section */
 		0313F7642AF9D6C400AD9484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7632AF9D6C400AD9484 /* AppDelegate.swift */; };
 		0313F7662AF9D6C400AD9484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7652AF9D6C400AD9484 /* SceneDelegate.swift */; };
-		0313F7682AF9D6C400AD9484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7672AF9D6C400AD9484 /* ViewController.swift */; };
-		0313F76B2AF9D6C400AD9484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0313F7692AF9D6C400AD9484 /* Main.storyboard */; };
 		0313F76D2AF9D6C500AD9484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0313F76C2AF9D6C500AD9484 /* Assets.xcassets */; };
 		0313F7702AF9D6C500AD9484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0313F76E2AF9D6C500AD9484 /* LaunchScreen.storyboard */; };
 		0313F77B2AF9D6C600AD9484 /* PruebaBancomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F77A2AF9D6C600AD9484 /* PruebaBancomTests.swift */; };
 		0313F7852AF9D6C600AD9484 /* PruebaBancomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7842AF9D6C600AD9484 /* PruebaBancomUITests.swift */; };
 		0313F7872AF9D6C600AD9484 /* PruebaBancomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7862AF9D6C600AD9484 /* PruebaBancomUITestsLaunchTests.swift */; };
+		03C297B12AFB373A0033E437 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */; };
+		03C297B22AFB373A0033E437 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */; };
 		03E50B952AFAA26300BD7020 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E50B932AFAA26300BD7020 /* LoginViewController.swift */; };
 		03E50B962AFAA26400BD7020 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E50B942AFAA26300BD7020 /* LoginViewController.xib */; };
 		03E50B9A2AFABEBC00BD7020 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E50B992AFABEBC00BD7020 /* Extensions.swift */; };
+		03E50B9C2AFAE76300BD7020 /* TasksStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E50B9B2AFAE76300BD7020 /* TasksStoryboard.storyboard */; };
+		03E50B9E2AFAE7A400BD7020 /* RadialGradientVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E50B9D2AFAE7A400BD7020 /* RadialGradientVIew.swift */; };
+		03E50BA02AFAE7E700BD7020 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E50B9F2AFAE7E700BD7020 /* HomeViewController.swift */; };
+		03E50BAD2AFAF6F100BD7020 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E50BAB2AFAF6F100BD7020 /* TaskTableViewCell.swift */; };
+		03E50BAE2AFAF6F100BD7020 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E50BAC2AFAF6F100BD7020 /* TaskTableViewCell.xib */; };
 		70D14814F8639EA1DC27A117 /* Pods_PruebaBancom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6AF54FD9756B2DBEE78416 /* Pods_PruebaBancom.framework */; };
 		9DDAB22EE775088A959A8DEC /* Pods_PruebaBancom_PruebaBancomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488D2C7E34DF74294C4F2F1D /* Pods_PruebaBancom_PruebaBancomUITests.framework */; };
 		9E254DFFFC235C60F4FA4CC6 /* Pods_PruebaBancomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DA1920846A6A8F05D33AA /* Pods_PruebaBancomTests.framework */; };
@@ -45,8 +50,6 @@
 		0313F7602AF9D6C400AD9484 /* PruebaBancom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaBancom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0313F7632AF9D6C400AD9484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0313F7652AF9D6C400AD9484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0313F7672AF9D6C400AD9484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0313F76A2AF9D6C400AD9484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0313F76C2AF9D6C500AD9484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0313F76F2AF9D6C500AD9484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0313F7712AF9D6C500AD9484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,9 +58,16 @@
 		0313F7802AF9D6C600AD9484 /* PruebaBancomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaBancomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0313F7842AF9D6C600AD9484 /* PruebaBancomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaBancomUITests.swift; sourceTree = "<group>"; };
 		0313F7862AF9D6C600AD9484 /* PruebaBancomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaBancomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		03E50B932AFAA26300BD7020 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		03E50B942AFAA26300BD7020 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		03E50B992AFABEBC00BD7020 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		03E50B9B2AFAE76300BD7020 /* TasksStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TasksStoryboard.storyboard; sourceTree = "<group>"; };
+		03E50B9D2AFAE7A400BD7020 /* RadialGradientVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientVIew.swift; sourceTree = "<group>"; };
+		03E50B9F2AFAE7E700BD7020 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		03E50BAB2AFAF6F100BD7020 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		03E50BAC2AFAF6F100BD7020 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		0F775F19731CF873882FB884 /* Pods-PruebaBancomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancomTests.release.xcconfig"; path = "Target Support Files/Pods-PruebaBancomTests/Pods-PruebaBancomTests.release.xcconfig"; sourceTree = "<group>"; };
 		163988D8FE1FA7F25CCC7F80 /* Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig"; path = "Target Support Files/Pods-PruebaBancom-PruebaBancomUITests/Pods-PruebaBancom-PruebaBancomUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3B6AF54FD9756B2DBEE78416 /* Pods_PruebaBancom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaBancom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,14 +134,19 @@
 			children = (
 				03E50B992AFABEBC00BD7020 /* Extensions.swift */,
 				0313F7632AF9D6C400AD9484 /* AppDelegate.swift */,
+				03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */,
+				03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */,
 				0313F7652AF9D6C400AD9484 /* SceneDelegate.swift */,
-				0313F7672AF9D6C400AD9484 /* ViewController.swift */,
-				0313F7692AF9D6C400AD9484 /* Main.storyboard */,
 				0313F76C2AF9D6C500AD9484 /* Assets.xcassets */,
 				0313F76E2AF9D6C500AD9484 /* LaunchScreen.storyboard */,
 				0313F7712AF9D6C500AD9484 /* Info.plist */,
 				03E50B932AFAA26300BD7020 /* LoginViewController.swift */,
 				03E50B942AFAA26300BD7020 /* LoginViewController.xib */,
+				03E50B9B2AFAE76300BD7020 /* TasksStoryboard.storyboard */,
+				03E50B9D2AFAE7A400BD7020 /* RadialGradientVIew.swift */,
+				03E50B9F2AFAE7E700BD7020 /* HomeViewController.swift */,
+				03E50BAB2AFAF6F100BD7020 /* TaskTableViewCell.swift */,
+				03E50BAC2AFAF6F100BD7020 /* TaskTableViewCell.xib */,
 			);
 			path = PruebaBancom;
 			sourceTree = "<group>";
@@ -285,10 +300,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E50BAE2AFAF6F100BD7020 /* TaskTableViewCell.xib in Resources */,
+				03C297B22AFB373A0033E437 /* ProjectCollectionViewCell.xib in Resources */,
 				03E50B962AFAA26400BD7020 /* LoginViewController.xib in Resources */,
+				03E50B9C2AFAE76300BD7020 /* TasksStoryboard.storyboard in Resources */,
 				0313F7702AF9D6C500AD9484 /* LaunchScreen.storyboard in Resources */,
 				0313F76D2AF9D6C500AD9484 /* Assets.xcassets in Resources */,
-				0313F76B2AF9D6C400AD9484 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,11 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C297B12AFB373A0033E437 /* ProjectCollectionViewCell.swift in Sources */,
+				03E50BAD2AFAF6F100BD7020 /* TaskTableViewCell.swift in Sources */,
 				03E50B9A2AFABEBC00BD7020 /* Extensions.swift in Sources */,
 				03E50B952AFAA26300BD7020 /* LoginViewController.swift in Sources */,
-				0313F7682AF9D6C400AD9484 /* ViewController.swift in Sources */,
 				0313F7642AF9D6C400AD9484 /* AppDelegate.swift in Sources */,
 				0313F7662AF9D6C400AD9484 /* SceneDelegate.swift in Sources */,
+				03E50BA02AFAE7E700BD7020 /* HomeViewController.swift in Sources */,
+				03E50B9E2AFAE7A400BD7020 /* RadialGradientVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,14 +477,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0313F7692AF9D6C400AD9484 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0313F76A2AF9D6C400AD9484 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0313F76E2AF9D6C500AD9484 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -603,7 +615,6 @@
 				INFOPLIST_FILE = PruebaBancom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = " ";
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -633,7 +644,6 @@
 				INFOPLIST_FILE = PruebaBancom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = " ";
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
