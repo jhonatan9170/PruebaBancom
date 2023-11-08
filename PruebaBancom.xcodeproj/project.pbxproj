@@ -11,6 +11,9 @@
 		0313F7662AF9D6C400AD9484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F7652AF9D6C400AD9484 /* SceneDelegate.swift */; };
 		0313F76D2AF9D6C500AD9484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0313F76C2AF9D6C500AD9484 /* Assets.xcassets */; };
 		0313F7702AF9D6C500AD9484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0313F76E2AF9D6C500AD9484 /* LaunchScreen.storyboard */; };
+		037EB5B62AFC0C82006E8FA5 /* UserServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */; };
+		037EB5B82AFC0FC7006E8FA5 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */; };
+		037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */; };
 		03C297B12AFB373A0033E437 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */; };
 		03C297B22AFB373A0033E437 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */; };
 		03C928D82AFBD35B00E11424 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C928D72AFBD35B00E11424 /* APIClient.swift */; };
@@ -50,6 +53,9 @@
 		0313F76F2AF9D6C500AD9484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0313F7712AF9D6C500AD9484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0313F7762AF9D6C600AD9484 /* PruebaBancomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaBancomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTest.swift; sourceTree = "<group>"; };
+		037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTest.swift; sourceTree = "<group>"; };
 		03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		03C928D72AFBD35B00E11424 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -140,6 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				03C928D92AFBD9D200E11424 /* APIClientTest.swift */,
+				037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */,
+				037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */,
+				037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */,
 			);
 			path = PruebaBancomTests;
 			sourceTree = "<group>";
@@ -393,7 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037EB5B82AFC0FC7006E8FA5 /* MockAPIClient.swift in Sources */,
+				037EB5B62AFC0C82006E8FA5 /* UserServiceTest.swift in Sources */,
 				03C928DA2AFBD9D200E11424 /* APIClientTest.swift in Sources */,
+				037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
