@@ -14,6 +14,8 @@
 		037EB5B62AFC0C82006E8FA5 /* UserServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */; };
 		037EB5B82AFC0FC7006E8FA5 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */; };
 		037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */; };
+		037EB5BC2AFC2822006E8FA5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5BB2AFC2822006E8FA5 /* LoginViewModel.swift */; };
+		037EB5BE2AFC2CAA006E8FA5 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5BD2AFC2CAA006E8FA5 /* LoginViewModelTest.swift */; };
 		03C297B12AFB373A0033E437 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */; };
 		03C297B22AFB373A0033E437 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */; };
 		03C928D82AFBD35B00E11424 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C928D72AFBD35B00E11424 /* APIClient.swift */; };
@@ -56,6 +58,8 @@
 		037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTest.swift; sourceTree = "<group>"; };
 		037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTest.swift; sourceTree = "<group>"; };
+		037EB5BB2AFC2822006E8FA5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		037EB5BD2AFC2CAA006E8FA5 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 		03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		03C928D72AFBD35B00E11424 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				0313F7712AF9D6C500AD9484 /* Info.plist */,
 				03E50B9D2AFAE7A400BD7020 /* RadialGradientVIew.swift */,
 				03C928DB2AFBDF6500E11424 /* Constants.swift */,
+				037EB5BB2AFC2822006E8FA5 /* LoginViewModel.swift */,
 			);
 			path = PruebaBancom;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */,
 				037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */,
 				037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */,
+				037EB5BD2AFC2CAA006E8FA5 /* LoginViewModelTest.swift */,
 			);
 			path = PruebaBancomTests;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 				03C928E52AFBE5E100E11424 /* Post.swift in Sources */,
 				03C928DC2AFBDF6500E11424 /* Constants.swift in Sources */,
 				03C928E22AFBE52200E11424 /* UserService.swift in Sources */,
+				037EB5BC2AFC2822006E8FA5 /* LoginViewModel.swift in Sources */,
 				0313F7662AF9D6C400AD9484 /* SceneDelegate.swift in Sources */,
 				03C928E02AFBE51200E11424 /* PostService.swift in Sources */,
 				03E50BA02AFAE7E700BD7020 /* HomeViewController.swift in Sources */,
@@ -405,6 +412,7 @@
 				037EB5B82AFC0FC7006E8FA5 /* MockAPIClient.swift in Sources */,
 				037EB5B62AFC0C82006E8FA5 /* UserServiceTest.swift in Sources */,
 				03C928DA2AFBD9D200E11424 /* APIClientTest.swift in Sources */,
+				037EB5BE2AFC2CAA006E8FA5 /* LoginViewModelTest.swift in Sources */,
 				037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
