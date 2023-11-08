@@ -16,6 +16,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegates()
+        let request = PostRequest(title: "fdf", body: "sfaf", userId: 2)
+        //APIClient.shared.request(url: Constants.createPostsURL, method: .post, parameters: request.dictionary) { (result: Result<Post, Error>) in }
+        //let url = Constants.getUsersURL + "/1/posts"
+        //APIClient.shared.request(url: url, method: .get) { (result: Result<PostResponse, Error>) in }
+        //APIClient.shared.request(url: Constants.getUsersURL, method: .get) { (result: Result<UserResponse, Error>) in }
     }
     
     
