@@ -13,6 +13,7 @@
 		0313F7702AF9D6C500AD9484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0313F76E2AF9D6C500AD9484 /* LaunchScreen.storyboard */; };
 		0333D01F2AFC577C00224A8A /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D01E2AFC577C00224A8A /* HomeViewModelTest.swift */; };
 		0333D0212AFC5C0600224A8A /* CreatePostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D0202AFC5C0600224A8A /* CreatePostViewModelTests.swift */; };
+		0333D0242AFC6ED800224A8A /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D0222AFC6ED400224A8A /* CreateTaskViewController.swift */; };
 		037EB5B62AFC0C82006E8FA5 /* UserServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */; };
 		037EB5B82AFC0FC7006E8FA5 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */; };
 		037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */; };
@@ -66,6 +67,7 @@
 		0313F7762AF9D6C600AD9484 /* PruebaBancomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaBancomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0333D01E2AFC577C00224A8A /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 		0333D0202AFC5C0600224A8A /* CreatePostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModelTests.swift; sourceTree = "<group>"; };
+		0333D0222AFC6ED400224A8A /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTest.swift; sourceTree = "<group>"; };
 		037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTest.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		03C928D32AFBD2ED00E11424 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0333D0222AFC6ED400224A8A /* CreateTaskViewController.swift */,
 				03C297B02AFB373A0033E437 /* ProjectCollectionViewCell.xib */,
 				03C297AF2AFB373A0033E437 /* ProjectCollectionViewCell.swift */,
 				03E50BAB2AFAF6F100BD7020 /* TaskTableViewCell.swift */,
@@ -435,6 +438,7 @@
 				03C928DC2AFBDF6500E11424 /* Constants.swift in Sources */,
 				03C928E22AFBE52200E11424 /* UserService.swift in Sources */,
 				037EB5BC2AFC2822006E8FA5 /* LoginViewModel.swift in Sources */,
+				0333D0242AFC6ED800224A8A /* CreateTaskViewController.swift in Sources */,
 				0313F7662AF9D6C400AD9484 /* SceneDelegate.swift in Sources */,
 				037EB5C12AFC2FDC006E8FA5 /* CreatePostViewModel.swift in Sources */,
 				03C928E02AFBE51200E11424 /* PostService.swift in Sources */,

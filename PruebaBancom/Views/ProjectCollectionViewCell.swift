@@ -15,16 +15,21 @@ class ProjectCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var progresView: UIProgressView!
     @IBOutlet weak var avatarGroup: AvatarGroupView!
-
-
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         avatarGroup.alignment = .left
         avatarGroup.backgroundColor = .clear
         avatarGroup.borderColor = .clear
-        avatarGroup.setAvatars(images: [UIImage(named: "icon_google") ,UIImage(named: "icon_google"),UIImage(named: "icon_google")])
     }
-
+    
+    func configure(project: Project){
+        avatarGroup.setAvatars(images: project.images)
+        titleLabel.text = project.title
+        dateLabel.text = project.date
+        progresView.setProgress(project.progress, animated: false)
+        
+        progressLabel.text = String(Int(100*project.progress)) + "%"
+    }
+    
 }

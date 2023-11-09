@@ -24,7 +24,7 @@ class UserService:UserServiceProtocol {
         apiClient.request(url: Constants.getUsersURL, method: .get) { (result : Result<UserResponse, APIClientError>) in
             switch result {
             case .success(let users) :
-                guard let user = users.first(where: {$0.email == email}) else {
+                guard let user = users.first(where: {$0.email.lowercased() == email.lowercased()}) else {
                     completion(nil)
                     return
                 }

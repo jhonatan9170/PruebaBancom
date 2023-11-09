@@ -31,6 +31,12 @@ class CreatePostViewModel{
             delegate?.createPost(error: "Usuario no reconocido")
             return
         }
+        
+        guard !title.isEmpty && !body.isEmpty else {
+            self.delegate?.createPost(error: "Los campos son obligatorios")
+            return
+        }
+        
         let request = PostRequest(title: title, body: body, userId: user.id)
         service.createPost(request: request) { [weak self] post in
             if let post {

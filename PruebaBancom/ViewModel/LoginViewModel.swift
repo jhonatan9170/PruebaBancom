@@ -15,7 +15,7 @@ protocol LoginProtocol:AnyObject{
 class LoginViewModel {
     var email = ""
     var password = ""
-    let keepLogin = false
+    var keepLogin = false
     weak var delegate: LoginProtocol?
     var service: UserServiceProtocol
     var userDefaultsLayer = UserDefaultsLayer()

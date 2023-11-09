@@ -50,5 +50,25 @@ class CoreDataManager: CoreDataManagerProtocol {
             return []
         }
     }
+    func deleteAllData() {
+        let context = persistentContainer.viewContext
+        // Replace 'EntityName' with your actual entity names
+        let entities = persistentContainer.managedObjectModel.entities
+        entities.compactMap({ $0.name }).forEach(clearDeepObjectEntity)
+    }
+
+    private func clearDeepObjectEntity(entity: String) {
+        let context = persistentContainer.viewContext
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
+
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch let error as NSError {
+            // Handle error here
+            print("Could not delete all data in \(entity): \(error), \(error.userInfo)")
+        }
+    }
 }
 

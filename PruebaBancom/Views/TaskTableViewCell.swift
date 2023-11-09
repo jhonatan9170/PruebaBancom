@@ -29,11 +29,9 @@ class TaskTableViewCell: UITableViewCell {
             print("checkbox is checked: \(isChecked)")
         }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    func configure(task: Post){
+        timeLabel.text = String(Int.random(in: 2...9))+" hours"
+        titleLabel.text = task.title
+    }
 }

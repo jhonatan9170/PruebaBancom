@@ -27,6 +27,10 @@ class HomeViewModel{
         self.service = service
     }
     
+    func getUsername() -> String?{
+        return userDefaultsLayer.getUser()?.name
+    }
+    
     func getPostsStored()->[Post]{
         let postsStored = coreDataMananger.fetchPosts()
         return postsStored.map { $0.toPost() }

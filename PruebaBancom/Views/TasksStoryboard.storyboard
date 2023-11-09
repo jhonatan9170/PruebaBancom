@@ -181,6 +181,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7g8-bs-ABD"/>
                     <connections>
+                        <outlet property="nameLabel" destination="6vD-Nw-YqZ" id="Jph-f5-cQO"/>
                         <outlet property="proyectCollectionView" destination="9AJ-aN-KcB" id="Ynv-kI-cgZ"/>
                         <outlet property="taskListTableView" destination="4z4-1H-LTk" id="Qpn-EX-zHZ"/>
                     </connections>
@@ -189,17 +190,62 @@
             </objects>
             <point key="canvasLocation" x="982.44274809160299" y="-2.8169014084507045"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Task View Controller-->
         <scene sceneID="Wea-DO-DhE">
             <objects>
-                <viewController id="FfS-T1-P5f" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateTaskViewControllerId" id="FfS-T1-P5f" customClass="CreateTaskViewController" customModule="PruebaBancom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qHZ-OK-Z8z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bxk-74-ErU">
+                                <rect key="frame" x="20" y="70" width="335" height="88"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Titulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xIf-51-lj3" customClass="MDCOutlinedTextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripcion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxS-C8-Z8d" customClass="MDCOutlinedTextField">
+                                        <rect key="frame" x="0.0" y="54" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oed-n7-sqQ">
+                                <rect key="frame" x="20" y="700" width="335" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kL9-IE-qcB"/>
+                                </constraints>
+                                <color key="tintColor" red="0.48627450979999998" green="0.2274509804" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crear post">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="baseBackgroundColor" red="0.48627450979999998" green="0.2274509804" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="creatButtonTapped:" destination="FfS-T1-P5f" eventType="touchUpInside" id="Y1a-p8-jbz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="REC-j7-Dkf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="REC-j7-Dkf" firstAttribute="trailing" secondItem="bxk-74-ErU" secondAttribute="trailing" constant="20" id="Jkw-2K-6Fl"/>
+                            <constraint firstItem="REC-j7-Dkf" firstAttribute="trailing" secondItem="oed-n7-sqQ" secondAttribute="trailing" constant="20" id="Tac-tg-1ir"/>
+                            <constraint firstItem="bxk-74-ErU" firstAttribute="top" secondItem="REC-j7-Dkf" secondAttribute="top" constant="20" id="eCB-jo-OEd"/>
+                            <constraint firstItem="REC-j7-Dkf" firstAttribute="bottom" secondItem="oed-n7-sqQ" secondAttribute="bottom" constant="30" id="hQ7-Ac-cA4"/>
+                            <constraint firstItem="bxk-74-ErU" firstAttribute="leading" secondItem="qHZ-OK-Z8z" secondAttribute="leading" constant="20" id="lFM-Q1-T7I"/>
+                            <constraint firstItem="oed-n7-sqQ" firstAttribute="leading" secondItem="REC-j7-Dkf" secondAttribute="leading" constant="20" id="yaW-r7-2Kj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hbY-9g-ec5"/>
+                    <connections>
+                        <outlet property="bodyTextField" destination="qxS-C8-Z8d" id="VyC-1E-mCm"/>
+                        <outlet property="titleTextField" destination="xIf-51-lj3" id="5mK-1a-Crt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdP-DC-mS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

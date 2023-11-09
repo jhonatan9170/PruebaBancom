@@ -25,7 +25,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7f-q7-Dzr" customClass="MDCOutlinedTextField">
                     <rect key="frame" x="16" y="310.66666666666669" width="361" height="34"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru6-re-cqO">
                     <rect key="frame" x="339" y="315.66666666666669" width="24" height="24"/>
@@ -155,7 +155,7 @@
         </view>
     </objects>
     <resources>
-        <image name="eye.fill" catalog="system" width="128" height="80"/>
+        <image name="eye.fill" catalog="system" width="32" height="32"/>
         <image name="icon_google" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

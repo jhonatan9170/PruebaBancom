@@ -11,41 +11,52 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var proyectCollectionView: UICollectionView!
     @IBOutlet weak var taskListTableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    var posts: [Post] = []
+    var projects: [Project] = []
+    var viewModel = HomeViewModel()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegates()
-        let request = PostRequest(title: "fdf", body: "sfaf", userId: 2)
-        //APIClient.shared.request(url: Constants.createPostsURL, method: .post, parameters: request.dictionary) { (result: Result<Post, Error>) in }
-        //let url = Constants.getUsersURL + "/1/posts"
-        //APIClient.shared.request(url: url, method: .get) { (result: Result<PostResponse, Error>) in }
-        //APIClient.shared.request(url: Constants.getUsersURL, method: .get) { (result: Result<UserResponse, Error>) in }
+        setViews()
+        viewModel.getPost()
+        viewModel.getProjects()
     }
     
-    
+    func setViews(){
+        proyectCollectionView.register(UINib(nibName: "ProjectCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProjectCollectionViewCell")
+        proyectCollectionView.backgroundColor = .clear
+        taskListTableView.register(UINib(nibName: "TaskTableViewCell", bundle: nil), forCellReuseIdentifier: "TaskTableViewCell")
+        taskListTableView.backgroundColor = .clear
+        
+        nameLabel.text = viewModel.getUsername()
+    }
     
 
     func setDelegates(){
         proyectCollectionView.dataSource = self
         proyectCollectionView.delegate = self
-        proyectCollectionView.register(UINib(nibName: "ProjectCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProjectCollectionViewCell")
-        proyectCollectionView.backgroundColor = .clear
+
         taskListTableView.delegate = self
         taskListTableView.dataSource = self
-        taskListTableView.register(UINib(nibName: "TaskTableViewCell", bundle: nil), forCellReuseIdentifier: "TaskTableViewCell")
-        taskListTableView.reloadData()
-        taskListTableView.backgroundColor = .clear
+        
+        viewModel.delegate = self
+
     }
 
     @IBAction func addButtonTapped(_ sender: UIButton) {
-        
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CreateTaskViewControllerId") as? CreateTaskViewController {
+            viewController.delegate = self
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
 
 extension HomeViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return posts.count
     }
     
 
@@ -55,6 +66,8 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource {
         }
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
+        let post = posts[indexPath.row]
+        cell.configure(task: post)
         return cell
     }
 
@@ -65,14 +78,45 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
  
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return projects.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProjectCollectionViewCell", for: indexPath) as! ProjectCollectionViewCell
         cell.backgroundColor = .clear
+        let project = projects[indexPath.row]
+        cell.configure(project: project)
         return cell
         
     }
+}
+
+extension HomeViewController: HomeDelegate {
+    func getPosts(posts: [Post]) {
+        self.posts = posts
+        DispatchQueue.main.async {
+            self.taskListTableView.reloadData()
+        }
+        
+    }
+    
+    func error(error: String) {
+        
+    }
+    
+    func getProjects(projects: [Project]) {
+        self.projects = projects
+        DispatchQueue.main.async {
+            self.proyectCollectionView.reloadData()
+        }
+    }
+}
+
+extension HomeViewController: CreateTaskDelegate{
+    func didCreateNewPost() {
+        viewModel.getPost()
+    }
+    
+    
 }

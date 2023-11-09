@@ -10,27 +10,49 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    var userDefaultsLayer = UserDefaultsLayer()
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = scene as? UIWindowScene else { return }
-        
-        // Create a UIWindow using the window scene
+
         let window = UIWindow(windowScene: windowScene)
         
-        // Initialize your XIB-based view controller
-        let vc = LoginViewController(nibName: String(describing: LoginViewController.self), bundle: nil)
-        window.rootViewController = vc
+        if shouldKeepLoggedIn() {
+            let storyboard = UIStoryboard(name: "TasksStoryboard", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewControllerId")
+            let navigationController = UINavigationController(rootViewController: vc)
+                
+            window.rootViewController = navigationController
+        } else {
+            cleanUserDefaults()
+            cleanCoreData()
+            let vc = LoginViewController(nibName: String(describing: LoginViewController.self), bundle: nil)
+            window.rootViewController = vc
+        }
         
-        
-        // Make the window visible
         window.makeKeyAndVisible()
-        
-        // Assign the window to the scene delegate's window property
         self.window = window
+    }
+    
+    private func shouldKeepLoggedIn() -> Bool {
+        let keepLoggedIn = userDefaultsLayer.getValue(forKey: Constants.keepLoginKey) as? Bool
+        if keepLoggedIn == true {
+            if let lastLoginDate = userDefaultsLayer.getValue(forKey: Constants.dateLoginKey) as? Date {
+                return lastLoginDate.timeIntervalSinceNow > -15 * 60
+            }
+        }
+        return false
+    }
+    
+    private func cleanUserDefaults() {
+        if let bundleID = Bundle.main.bundleIdentifier {
+            UserDefaults.standard.removePersistentDomain(forName: bundleID)
+            UserDefaults.standard.synchronize() // This is for legacy purposes and not needed in most cases
+        }
+    }
+    
+    private func cleanCoreData() {
+        CoreDataManager.shared.deleteAllData()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -41,8 +63,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
