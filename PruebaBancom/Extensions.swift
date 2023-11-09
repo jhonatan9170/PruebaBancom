@@ -92,3 +92,9 @@ extension Encodable {
         return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] }
     }
 }
+
+extension PostsData {
+    func toPost() -> Post{
+        return Post(userId: Int(self.userId), id: Int(self.id), title: self.title ?? "", body: self.body ?? "")
+    }
+}

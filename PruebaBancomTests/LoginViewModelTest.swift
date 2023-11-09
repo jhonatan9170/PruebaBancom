@@ -111,16 +111,16 @@ class MockLoginDelegate: LoginProtocol {
 
 class MockUserDefaultsLayer: UserDefaultsLayer {
     var userDefaultsDictionary = [String: Any]()
+    var mockUser: User? // Add this property to store a mock User object
     
+    override func getUser() -> User? {
+        return mockUser
+    }
     override func save(value: Any?, forKey key: String) {
         userDefaultsDictionary[key] = value
     }
     
     override func saveUser(value: User) {
-    }
-    
-    override func getUser() -> User? {
-        return userDefaultsDictionary[Constants.userKey] as? User
     }
     
     override func getValue(forKey key: String) -> Any? {
