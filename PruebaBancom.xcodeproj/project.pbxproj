@@ -12,6 +12,7 @@
 		0313F76D2AF9D6C500AD9484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0313F76C2AF9D6C500AD9484 /* Assets.xcassets */; };
 		0313F7702AF9D6C500AD9484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0313F76E2AF9D6C500AD9484 /* LaunchScreen.storyboard */; };
 		0333D01F2AFC577C00224A8A /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D01E2AFC577C00224A8A /* HomeViewModelTest.swift */; };
+		0333D0212AFC5C0600224A8A /* CreatePostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333D0202AFC5C0600224A8A /* CreatePostViewModelTests.swift */; };
 		037EB5B62AFC0C82006E8FA5 /* UserServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */; };
 		037EB5B82AFC0FC7006E8FA5 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */; };
 		037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */; };
@@ -64,6 +65,7 @@
 		0313F7712AF9D6C500AD9484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0313F7762AF9D6C600AD9484 /* PruebaBancomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaBancomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0333D01E2AFC577C00224A8A /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		0333D0202AFC5C0600224A8A /* CreatePostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModelTests.swift; sourceTree = "<group>"; };
 		037EB5B52AFC0C82006E8FA5 /* UserServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTest.swift; sourceTree = "<group>"; };
 		037EB5B72AFC0FC7006E8FA5 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		037EB5B92AFC14B1006E8FA5 /* PostServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTest.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				037EB5D22AFC52C4006E8FA5 /* UserDefautsLayerTests.swift */,
 				037EB5BD2AFC2CAA006E8FA5 /* LoginViewModelTest.swift */,
 				0333D01E2AFC577C00224A8A /* HomeViewModelTest.swift */,
+				0333D0202AFC5C0600224A8A /* CreatePostViewModelTests.swift */,
 			);
 			path = PruebaBancomTests;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			files = (
 				037EB5B82AFC0FC7006E8FA5 /* MockAPIClient.swift in Sources */,
 				037EB5B62AFC0C82006E8FA5 /* UserServiceTest.swift in Sources */,
+				0333D0212AFC5C0600224A8A /* CreatePostViewModelTests.swift in Sources */,
 				03C928DA2AFBD9D200E11424 /* APIClientTest.swift in Sources */,
 				037EB5BE2AFC2CAA006E8FA5 /* LoginViewModelTest.swift in Sources */,
 				037EB5BA2AFC14B1006E8FA5 /* PostServiceTest.swift in Sources */,
